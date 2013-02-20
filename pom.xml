@@ -12,7 +12,7 @@
     <groupId>nz.ac.auckland.grails.plugins</groupId>
     <artifactId>cache-headers</artifactId>
     <packaging>grails-plugin2</packaging>
-    <version>3.1</version>
+    <version>3.2</version>
     <name>Reflects grails-cached-headers plugin</name>
     <description>Grails cached plugin but with Maven bundling</description>
     <url>http://grails.org/plugin/cached-resources</url>

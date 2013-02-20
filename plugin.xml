@@ -8,7 +8,6 @@ Improve your application performance with browser caching, with easy ways to set
   <documentation>http://grails.org/plugin/cache-headers</documentation>
   <type>CacheHeadersGrailsPlugin</type>
   <resources>
-    <resource>com.grailsrocks.cacheheaders.TestController</resource>
     <resource>com.grailsrocks.cacheheaders.CacheHeadersService</resource>
   </resources>
   <repositories />

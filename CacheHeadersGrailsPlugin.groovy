@@ -8,8 +8,8 @@ class CacheHeadersGrailsPlugin {
     def pluginExcludes = [
             "grails-app/views/error.gsp",
             "scripts/_Events.groovy",
-            "src/docs/**/*.*"
-//            "grails-app/controllers/**/TestController.groovy" // nothing works because of bug
+            "src/docs/**/*.*",
+            "grails-app/controllers/**/TestController.groovy" // nothing works because of bug
     ]
     
     def author = "Marc Palmer"
