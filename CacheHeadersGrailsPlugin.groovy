@@ -2,12 +2,14 @@ import org.codehaus.groovy.grails.commons.ConfigurationHolder
 import groovy.util.ConfigObject
 
 class CacheHeadersGrailsPlugin {
-    def version = "1.1.5"
+    def version = "3.1"
     def grailsVersion = "1.2.0 > *"
-    def dependsOn = ['controllers':'1.1 > *', 'logging':'1.1 > *']
+    def dependsOn = ['controllers':'2.1 > *']
     def pluginExcludes = [
             "grails-app/views/error.gsp",
-            "grails-app/controllers/**"
+            "scripts/_Events.groovy",
+            "src/docs/**/*.*"
+//            "grails-app/controllers/**/TestController.groovy" // nothing works because of bug
     ]
     
     def author = "Marc Palmer"

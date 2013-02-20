@@ -117,7 +117,7 @@ class CacheHeadersServiceTests extends GrailsUnitTestCase {
         
         assertEquals 200, resp.status
         assertEquals "Derelict Herds", resp.contentAsString
-        assertEquals lastMod.time, resp.getHeader('Last-Modified')
+        assert lastMod.time == resp.getHeader('Last-Modified').toLong()
         assertEquals "1234567Z", resp.getHeader('ETag')
     }
 
@@ -155,7 +155,7 @@ class CacheHeadersServiceTests extends GrailsUnitTestCase {
         
         assertEquals 200, resp.status
         assertEquals "Derelict Herds", resp.contentAsString
-        assertEquals lastMod.time, resp.getHeader('Last-Modified')
+        assertEquals lastMod.time, resp.getHeader('Last-Modified').toLong()
         assertEquals "bingo", resp.getHeader('ETag')
     }
 
@@ -228,7 +228,7 @@ class CacheHeadersServiceTests extends GrailsUnitTestCase {
         
         assertEquals 200, resp.status
         assertEquals "Derelict Herds", resp.contentAsString
-        assertEquals lastMod.time, resp.getHeader('Last-Modified')
+        assertEquals lastMod.time, resp.getHeader('Last-Modified').toLong()
         assertEquals "1234567Z", resp.getHeader('ETag')
     }
 
@@ -264,7 +264,7 @@ class CacheHeadersServiceTests extends GrailsUnitTestCase {
         
         assertEquals 200, resp.status
         assertEquals "Porcelain Heart", resp.contentAsString
-        assertEquals lastMod.time, resp.getHeader('Last-Modified')
+        assertEquals lastMod.time, resp.getHeader('Last-Modified').toLong()
         assertEquals "OU812", resp.getHeader('ETag')
     }
 
